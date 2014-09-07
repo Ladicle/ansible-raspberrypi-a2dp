@@ -1,0 +1,5 @@
+---
+- name: Ansible palybook for configration raspberry pi
+  remote_user: pi
+  include: common.yml
+# - include: a2dp.yml

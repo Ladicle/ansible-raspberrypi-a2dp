@@ -1,0 +1,6 @@
+---
+- name: install tightvnc-server
+  apt: name=tightvncserver state=installed
+
+- name: setup vnc-server
+  script: setup_vncserver.expect creates=raspberrypi:1.pid

@@ -1,0 +1,12 @@
+---
+- name: install dependence libs
+  apt: name={{ item }} state=installed
+  with_items:
+    - bluez
+      pulseaudio-module-bluetooth
+      python-gobject
+      python-gobject-2
+
+# - name: pi add to lp group
+  
+  

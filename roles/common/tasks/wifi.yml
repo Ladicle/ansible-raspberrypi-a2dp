@@ -1,0 +1,13 @@
+---
+- name: set configration file for wifi
+  template: src=wpa_supplicant.conf.j2 dest=/etc/wpa_supplicant/wpa_supplicant.conf mode=0600
+
+
+
+
+
+
+
+
+
+

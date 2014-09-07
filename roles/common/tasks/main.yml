@@ -1,0 +1,15 @@
+---
+- include: update.yml
+- include: wifi.yml
+- include: vnc.yml
+
+
+
+
+
+
+
+
+
+
+

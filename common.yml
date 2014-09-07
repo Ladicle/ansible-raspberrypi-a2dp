@@ -1,0 +1,9 @@
+---
+- hosts: all
+  sudo: yes
+  roles:
+    - common
+  vars_prompt:
+    wpa_ssid: "what is ssid?"
+    wpa_psk: "what is psk?"
+

@@ -1,0 +1,13 @@
+#!/usr/bin/expect
+
+set timeout 5
+spawn vncserver :1 -geometry 1440x900 -depth 24
+
+expect "Password:"
+send "{{ vnc_password }}\n"
+expect "Verify:"
+send "{{ vnc_password }}\n"
+
+expect "Would you like to enter a view-only password (y/n)?"
+send "n"
+
