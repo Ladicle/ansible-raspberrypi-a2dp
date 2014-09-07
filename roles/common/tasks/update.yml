@@ -2,6 +2,3 @@
 - name: update packages
   apt: update_cache=yes
   apt: upgrade=dist
-
-- name: update raspberrypi
-  command: /usr/bin/rpi-update
